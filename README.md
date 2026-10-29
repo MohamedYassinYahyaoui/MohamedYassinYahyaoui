@@ -1,31 +1,33 @@
-# Mohamed Yassine Yahyaoui
+# Hi, I'm Mohamed Yassin Yahyaoui 👋
 
-**Backend Engineering & Distributed Systems**  
-Sousse, Tunisia • [LinkedIn](https://linkedin.com) • [Email](mailto:yassinyahyaoui0000@gmail.com)
+**Software Engineering Student @ ISSAT Sousse (Tunisia)**  
+*Focused on Distributed Systems, High-Throughput Event Streaming & Resilient Anti-Bot Pipelines*
 
----
-
-### 🚀 What I Build
-I specialize in high-throughput backend architecture, event-driven streaming pipelines, and analytical data storage. My core stack focuses on asynchronous concurrency (**FastAPI**, **Asyncio**), distributed message brokers (**Redpanda / Kafka**), and columnar OLAP engines (**ClickHouse**, **DuckDB**).
-
----
-
-### 🛠️ Featured Systems & Flagship Repositories
-
-#### ⚡ [StreamPulse — Distributed Real-Time Log & Event Analytics Engine](https://github.com/MohamedYassinYahyaoui/Stream_pulse)
-* **Stack:** FastAPI, AIOKafka, Redpanda, ClickHouse (MergeTree), Grafana, Docker Compose
-* **Architecture:** Ingestion gateway processing 50k events with non-blocking AIOKafka publishing; dual-threshold micro-batching (`1,000 records` / `1.0s timeout`) flushed to ClickHouse via thread pools (`asyncio.to_thread`).
-* **Fault Tolerance:** Schema validation at ingress (HTTP 422) + Dead-Letter Queue (DLQ) for poisoned payloads and database insert failures.
-* **Telemetry:** Pre-provisioned Grafana dashboards tracking throughput, volume, and P95/P99 latency percentiles.
-
-#### 📊 [Automated Competitor Intelligence Engine](https://github.com/MohamedYassinYahyaoui/Automated-Competitor-Intelligence-Engine)
-* **Stack:** Python, DuckDB, HTTPX, `curl_cffi`, Playwright Stealth, Gemini API, Docker, GitHub Actions
-* **Architecture:** Multi-tier asynchronous ETL pipeline crawling e-commerce catalogs with adaptive failover to stealth browser sessions for Cloudflare/anti-bot protected targets.
-* **Analytics & Automation:** Conflict-safe atomic upserts into embedded DuckDB OLAP storage; scheduled daily autonomous scraping via containerized GitHub Actions CI.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Yassin_Yahyaoui-0077b5?style=flat-square&logo=linkedin)](https://linkedin.com/in/yassin-yahyaoui-331939389/)
+[![GitHub](https://img.shields.io/badge/GitHub-MohamedYassinYahyaoui-181717?style=flat-square&logo=github)](https://github.com/MohamedYassinYahyaoui)
+[![Email](https://img.shields.io/badge/Email-yassinyahyaoui0000%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:yassinyahyaoui0000@gmail.com)
 
 ---
 
-### 💻 Technical Stack
-* **Languages:** Python (Asyncio, Pydantic), TypeScript, SQL, C
-* **Distributed & Data Platforms:** Redpanda, Apache Kafka, ClickHouse, DuckDB, PostgreSQL, Redis
-* **Infrastructure & Observability:** Docker, Docker Compose, Grafana, Linux, Git, GitHub Actions CI/CD
+### 🚀 Flagship Systems & Live Benchmarks
+
+#### 1. [StreamPulse](https://github.com/MohamedYassinYahyaoui/Stream_pulse) — Distributed Telemetry & Ingestion Engine
+- **Throughput:** **10,635.49 req/sec** (50,000 / 50,000 HTTP 202, 0% drop rate) across 100 concurrent sockets.
+- **Tech Stack:** FastAPI, PostgreSQL 16 (Async SQLAlchemy 2.0), Redis 7, Redpanda (Kafka), AIOKafka, ClickHouse OLAP, Grafana.
+- **Architecture Highlights:** Multi-tenant auth plane (SHA-256 keys, HS256 JWTs), Redis L1/L2 read-through cache, atomic pipeline rate-limiting (`INCRBY`/`EXPIRE`), ClickHouse micro-batching worker (10k-event window) eliminating write-stalls, and 14 Pytest integration tests.
+- 📹 **[Watch 90s Architecture Walkthrough](https://www.loom.com/share/1cc9c2674e0b4a73b64ff7489858df0d)**
+
+#### 2. [Automated Competitor Intelligence Engine](https://github.com/MohamedYassinYahyaoui/Automated-Competitor-Intelligence-Engine) — Async Anti-Bot ETL & Columnar OLAP
+- **Performance:** **0.36s** concurrent multi-brand ingestion across Shopify JSON & HTML microdata.
+- **Token Pruning:** **92.6% token reduction** (183,972 chars → 13,636 chars) prior to Gemini 2.5 Flash synthesis.
+- **Tech Stack:** Python (`asyncio.gather`), `curl_cffi` (Chrome 120 TLS/JA3 impersonation), Headless Playwright Chromium, DuckDB, Pydantic v2.
+- **Architecture Highlights:** Two-tier ingestion auto-escalating to Playwright on HTTP 403 Cloudflare challenges, strict Pydantic v2 validation, Dead-Letter Queue quarantine with CLI replay (`scripts/replay_dlq.py`), and 7 Pytest integration tests.
+- 📹 **[Watch 90s Architecture Walkthrough](https://www.loom.com/share/bb6d64ce11834316989040e831c22e84)**
+
+---
+
+### 🛠️ Technical Stack
+- **Languages:** Python (Asyncio, Typing), SQL, C, TypeScript, Bash
+- **Streaming & Messaging:** Apache Kafka / Redpanda, AIOKafka, Event-Driven Architecture, Micro-Batching, Dead-Letter Queues (DLQ)
+- **Databases & OLAP:** PostgreSQL (Async SQLAlchemy 2.0), Redis, ClickHouse, DuckDB, SQLite
+- **Backend & Cloud:** FastAPI, Pydantic v2, `curl_cffi`, Playwright, Docker, Docker Compose, GitHub Actions CI/CD, Linux, Grafana
