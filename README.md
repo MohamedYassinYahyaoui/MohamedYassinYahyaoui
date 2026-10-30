@@ -1,4 +1,4 @@
-# Hi, I'm Mohamed Yassin Yahyaoui 👋
+# Hi, I'm Mohamed Yassin Yahyaoui
 
 **Software Engineering Student @ ISSAT Sousse (Tunisia)**  
 *Focused on Distributed Systems, High-Throughput Event Streaming & Resilient Anti-Bot Pipelines*
@@ -9,7 +9,7 @@
 
 ---
 
-### 🚀 Flagship Systems & Live Benchmarks
+### Flagship Systems & Live Benchmarks
 
 #### 1. [StreamPulse](https://github.com/MohamedYassinYahyaoui/Stream_pulse) — Distributed Telemetry & Ingestion Engine
 - **Throughput:** **10,635.49 req/sec** (50,000 / 50,000 HTTP 202, 0% drop rate) across 100 concurrent sockets.
@@ -22,11 +22,11 @@
 - **Token Pruning:** **92.6% token reduction** (183,972 chars → 13,636 chars) prior to Gemini 2.5 Flash synthesis.
 - **Tech Stack:** Python (`asyncio.gather`), `curl_cffi` (Chrome 120 TLS/JA3 impersonation), Headless Playwright Chromium, DuckDB, Pydantic v2.
 - **Architecture Highlights:** Two-tier ingestion auto-escalating to Playwright on HTTP 403 Cloudflare challenges, strict Pydantic v2 validation, Dead-Letter Queue quarantine with CLI replay (`scripts/replay_dlq.py`), and 7 Pytest integration tests.
-- 📹 **[Watch 90s Architecture Walkthrough](https://www.loom.com/share/bb6d64ce11834316989040e831c22e84)**
+   **[Watch 90s Architecture Walkthrough](https://www.loom.com/share/bb6d64ce11834316989040e831c22e84)**
 
 ---
 
-### 🛠️ Technical Stack
+### Technical Stack
 - **Languages:** Python (Asyncio, Typing), SQL, C, TypeScript, Bash
 - **Streaming & Messaging:** Apache Kafka / Redpanda, AIOKafka, Event-Driven Architecture, Micro-Batching, Dead-Letter Queues (DLQ)
 - **Databases & OLAP:** PostgreSQL (Async SQLAlchemy 2.0), Redis, ClickHouse, DuckDB, SQLite
